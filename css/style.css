@@ -125,3 +125,16 @@ footer {
   margin-top: 5px;
   cursor: pointer;
 }
+
+#welcomeMessage {
+  background-color: #eaddca; /* Light coffee cream */
+  color: #6f4e37; /* Coffee brown */
+  padding: 15px 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Limit width for better readability */
+}

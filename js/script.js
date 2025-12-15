@@ -2,6 +2,15 @@
 function checkLogin() {
   if (localStorage.getItem("login") !== "true") {
     window.location.href = "login.html";
+  } else {
+    displayWelcomeMessage();
+  }
+}
+
+function displayWelcomeMessage() {
+  const welcomeMessageEl = document.getElementById("welcomeMessage");
+  if (welcomeMessageEl) {
+    welcomeMessageEl.innerText = "ยินดีต้อนรับสู่ Coffee Time!";
   }
 }
 
