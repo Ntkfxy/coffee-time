@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Time</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="checkLogin(); loadCart();">
+
+    <header>
+        <h1>☕ Coffee Time</h1>
+        <p>ตะกร้า (<span id="count">0</span>)</p>
+    </header>
+
+    <nav>
+        <a href="index.html">เมนู</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="contact.html">ติดต่อ</a>
+        <a href="#" onclick="logout(); window.location='login.html'">Logout</a>
+    </nav>
+
+    <section>
+        <h2>เมนูกาแฟ</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="images/espresso.jifif" alt="Espresso" />
+                <p>Espresso 40฿</p>
+                <button onclick="addToCart('Espresso',40)">เพิ่มลงตะกร้า</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/latte.jifif" alt="Latte" />
+                <p>Latte 50฿</p>
+                <button onclick="addToCart('Latte',50)">เพิ่มลงตะกร้า</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/cappuccino.jifif" alt="Cappuccino" />
+                <p>Cappuccino 55฿</p>
+                <button onclick="addToCart('Cappuccino',55)">เพิ่มลงตะกร้า</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>🛒 ตะกร้า</h2>
+        <ul id="cartList"></ul>
+        <p>รวม: <span id="total">0</span> บาท</p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

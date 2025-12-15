@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f5f2;
+}
+
+header {
+  background: #6f4e37;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #5a3f2c;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 30px;
+  text-align: center;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  color: #6f4e37;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #6f4e37;
+  color: white;
+  cursor: pointer;
+}
+
+.cart {
+  background: white;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.login {
+  max-width: 300px;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.login input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.menu-item button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
